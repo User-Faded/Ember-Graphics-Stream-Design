@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!--
+ * File: 
+ * Author:  (Faded) 
+ * Date: 
+ * Purpose: 
+ 
+
+ 
+ -->
+
+<html lang="en-us">
+<head>
+<title>Happy Birthday Snake!!!</title>
+ <meta charset="utf-8"> 
+ 
+<style>
+body { background-color: black;}
+
+.con { color: white; font: 40px arial; font-weight: 200; min-width: 700px; width: 700px; 
+    display: block;
+    margin: auto;
+    width: 40%;
+	padding: 10%;
+	
+}
+
+h1{text-align: center; z-index: 99;}
+
+.fire1 { z-index: -1; position: absolute; top: 20%;}
+.fire2 { z-index: -1; position: absolute; top: 20%; left: 50%;}
+.fire3 { display: none;}
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	50%{
+		transform: translateX(-12%);
+	}
+	65%{
+		transform: translateX(8%);
+	}
+	80%{
+		transform: translateX(-8%);
+	}
+	95%{
+		transform: translateX(2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(5%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@keyframes glow {
+	0% {text-shadow: 0px 0px 5px #F50A0A, 2px 2px 8px #F50A0A;}
+	25% {text-shadow: 0px 0px 5px #F5F5F5, 2px 2px 8px #F5F5F5;}
+	50% {text-shadow: 0px 0px 5px #26BF08, 2px 2px 8px #26BF08;}
+	75% {text-shadow: 0px 0px 5px #FFC421, 2px 2px 8px #FFC421;}
+	100% {text-shadow: 0px 0px 5px #CF00DE, 2px 2px 8px #CF00DE;}
+	}
+	
+.glow{
+	animation-name: glow;
+
+	animation-duration: 8s;	
+
+	animation-iteration-count: infinite;
+}
+</style>
+
+   <link rel="icon" 
+      type="image/png" 
+      href="img/cake.png">
+	  
+</head>
+<body>
+
+<div class="con floating">
+<div class="glow">
+<h1 class="slideLeft " >Happy Birthday Snake!</h1>
+</div>
+</div>
+
+<img src="img/1.gif" class="fire1">
+<img src="img/2.gif" class="fire2">
+
+
+
+
+
+</body>
+</html>
