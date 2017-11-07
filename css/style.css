@@ -62,7 +62,7 @@ Texture on slideshow images
   list-style: none;
   border: 2px solid #8000ff;
   border-radius: 40px;
-  z-index: 101;
+  z-index: 901;
 }
 
 
@@ -136,11 +136,11 @@ Loading Dots Animation
 
 .fountainG{
 	position:absolute;
-	top:20.7em;
+	top:11em;
 	background-color: #8000ff;
 	width: 14px;
 	height: 14px;
-  margin-left: 26em;
+  margin-left: 49em;
 	animation-name:bounce_fountainG;
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
@@ -195,12 +195,14 @@ Loading Dots Animation
 @keyframes bounce_fountainG{
 	0%{
 	transform:scale(1);
-		background-color:#8000ff;
+		background-color: white;
 	}
+
+/*#8000ff*/
 
 	100%{
 	transform:scale(.3);
-		background-color: black;
+		background-color: purple;
 	}
 }
 
