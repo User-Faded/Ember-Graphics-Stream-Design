@@ -241,6 +241,10 @@ hr {
     text-decoration: none;
 }
 
+.card-text {
+  font-family: 'Lato', sans-serif;
+}
+
 h4 > a {
   color: #ab9147;
   text-decoration: none;
