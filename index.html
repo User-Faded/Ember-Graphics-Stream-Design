@@ -43,6 +43,11 @@
     <!-- Custom CSS Styles -->
     <link rel="stylesheet" href="css/website_v2.css">
 
+    <!-- Easing.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+
 
 
     <link rel="icon"
@@ -52,7 +57,7 @@
   </head>
 
   <body id="page-top">
-    
+
     <!--Top Navagation Bar -->
     <nav id="mainNav" class="navbar navbar-expand-lg nav-color fixed-top">
 
@@ -72,13 +77,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsiv">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger nav-text" href="#About">About</a>
+              <a id="nav-About" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger nav-text" href="#Portfolio">Portfolio</a>
+              <a id="nav-Portfolio" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger nav-text" href="#Contact">Contact</a>
+              <a id="nav-Contact" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">Contact</a>
             </li>
           </ul>
         </div>
@@ -388,6 +393,9 @@
       </div>
     </footer>
 
+    <!--Custom JS -->
+    <script src="js/main.js"></script>
+
 
     <script>
     "use strict";
@@ -409,7 +417,7 @@
       document.getElementById(arr).style.height = "100%";
     }
 
-    var stopVideo = function ( element ) {
+  var stopVideo = function ( element ) {
 
 	var iframe = document.getElementById(element).querySelector( "iframe");
 
