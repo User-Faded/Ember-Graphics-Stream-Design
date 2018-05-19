@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="css/website_v2.css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -34,18 +44,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-    <!-- Custom CSS Styles -->
-    <link rel="stylesheet" href="css/website_v2.css">
 
     <!-- Easing.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
 
 
 
@@ -64,9 +66,9 @@
 
       <div class="container">
 
-      <a class="navbar-brand" href="#">
+      <a id="logo" class="navbar-brand" href="#">
         <img src="images/icon.gif" width="16" height="26" class="d-inline-block brand-img" alt="">
-        <span class="brand-text d-inline-block align-top nav-link ">EMBER GRAPHICS</span></a>
+        <span id="nav-Top" class="brand-text d-inline-block align-top nav-link ">EMBER GRAPHICS</span></a>
 
 
         <!-- Menu Button when small screen-->
@@ -74,16 +76,16 @@
           <span class="navbar-toggler-icon" onclick="openNav()"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsiv">
+        <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a id="nav-About" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">About</a>
+              <a id="nav-About" class="nav-link nav-text" href="javascript:void(0)">About</a>
             </li>
             <li class="nav-item">
-              <a id="nav-Portfolio" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">Portfolio</a>
+              <a id="nav-Portfolio" class="nav-link nav-text" href="javascript:void(0)">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a id="nav-Contact" class="nav-link js-scroll-trigger nav-text" href="javascript:void(0)">Contact</a>
+              <a id="nav-Contact" class="nav-link nav-text" href="javascript:void(0)">Contact</a>
             </li>
           </ul>
         </div>
@@ -377,7 +379,7 @@
                   You can ask questions, offer suggestions, or just leave a comment, you can email me at:
 
                 </p>
-                <h5 id="myMail" class="text-center header-color mt-2 about-font"></h5>
+                <h5 class="text-center header-color mt-2 about-font"><a id="M-link" class="header-color about-font" href=""></a></h5>
 
               </div>
             </div>
@@ -393,72 +395,10 @@
       </div>
     </footer>
 
+
+
     <!--Custom JS -->
     <script src="js/main.js"></script>
-
-
-    <script>
-    "use strict";
-
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
-
-    function closeImg(arr) {
-      document.getElementById(arr).style.height = "0%";
-
-    }
-
-    function openImg(arr) {
-      document.getElementById(arr).style.height = "100%";
-    }
-
-  var stopVideo = function ( element ) {
-
-	var iframe = document.getElementById(element).querySelector( "iframe");
-
-	var video = document.getElementById(element).querySelector("video");
-	if ( iframe ) {
-		var iframeSrc = iframe.src;
-		iframe.src = iframeSrc;
-	}
-	if ( video ) {
-		video.pause();
-	}
-};
-
-    setTimeout(mail, 4000);
-
-    function mail(){
-        let h6 = $("#myMail");
-
-        let mail1 = "EmberGraphics";
-        let dot = String.fromCharCode(46);
-        let mail2 = "design";
-        let at = String.fromCharCode(64);
-        let mail3 = "gmail";
-        let mail4 = "com";
-
-        h6.text(mail1 + dot + mail2 + at + mail3 + dot + mail4);
-
-    }
-
-    $(document).scroll(function() {
-      $("#mainNav").offset().top>100?$("#mainNav").addClass("navbar-shrink"):$("#mainNav").removeClass("navbar-shrink")
-    });
-
-
-
-
-
-    </script>
-
-
-
 
 
 
