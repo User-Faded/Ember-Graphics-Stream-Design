@@ -79,13 +79,13 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a id="nav-About" class="nav-link nav-text" href="javascript:void(0)">About</a>
+              <a id="nav-About" class="nav-link nav-text nav-animation" href="javascript:void(0)">About</a>
             </li>
             <li class="nav-item">
-              <a id="nav-Portfolio" class="nav-link nav-text" href="javascript:void(0)">Portfolio</a>
+              <a id="nav-Portfolio" class="nav-link nav-text nav-animation" href="javascript:void(0)">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a id="nav-Contact" class="nav-link nav-text" href="javascript:void(0)">Contact</a>
+              <a id="nav-Contact" class="nav-link nav-text nav-animation" href="javascript:void(0)">Contact</a>
             </li>
           </ul>
         </div>
@@ -118,7 +118,7 @@
       <div id="myJumbotron-Text" class="container text-center jumbotron-text">
         <h1 class="my-font display-4 jumbo-text-shadow">DESIGNS FOR CREATORS</h1>
         <hr>
-        <p class="lead" style="font-size: 2vw;">I make custom graphics, visuals, and gadgets for content creators.</p>
+        <p class="lead" style="font-size: 2vw;">I make custom graphics, visuals, and websites for content creators.</p>
       </div>
     </header>
 <!-- Header End -->
@@ -152,37 +152,37 @@
 
               <ul class="list-inline list-icons text-center">
             <li class="list-inline-item">
-              <i class="devicon-html5-plain-wordmark"></i>
+              <i class="devicon-html5-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-css3-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-javascript-plain nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-jquery-plain-wordmark"></i>
+              <i class="devicon-jquery-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-bootstrap-plain-wordmark"></i>
+              <i class="devicon-bootstrap-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-sass-original"></i>
+              <i class="devicon-sass-original nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-photoshop-plain"></i>
+              <i class="devicon-photoshop-plain nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-cplusplus-plain-wordmark"></i>
+              <i class="devicon-cplusplus-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-java-plain-wordmark"></i>
+              <i class="devicon-java-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-nodejs-plain-wordmark"></i>
+              <i class="devicon-nodejs-plain-wordmark nav-animation"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-github-plain"></i>
+              <i class="devicon-github-plain nav-animation"></i>
             </li>
           </ul>
 
@@ -191,14 +191,14 @@
           <p class="lead about-font">
             The purpose of this website is to provide high quality, professional,
             affordable resources to content creators of all sizes. This includes animated stream overlays,
-            alerts, panels, screens, graphics, social media banners and backgrounds, websites and much more.
+            alerts, panels, screens, social media banners and backgrounds, graphics, and even professional websites!
             <br><br>
             This website was created with the simple idea that each content creator is unique,
             and therefore should have the ability to get highly personalized visuals unique to them.
             This website also serves a personal purpose in that it will allow me to work with new people
              and continue to grow as a graphic designer / software developer.
              <br><br>
-             My goal is simple: To create graphics I'm proud of and share them.
+             My goal is simple: To create graphics and websites I'm proud of and share them.
           </p>
 
 
@@ -293,6 +293,32 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a onClick="openImg('image7')"><img class="card-img-top" src="images/portfolio/8.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="javascript:void(0)" onclick="openImg('image7')">"Resident Evil" Themed Intro Video</a>
+                  </h4>
+                  <p class="card-text inner-text">Simple "Resident Evil" themed intro logo video created in After Effects.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a onClick="openImg('image8')"><img class="card-img-top" src="images/portfolio/9.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="javascript:void(0)" onclick="openImg('image8')">Simple Intro Video</a>
+                  </h4>
+                  <p class="card-text inner-text">Simple intro logo video created in After Effects.</p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
           <!-- /.row -->
@@ -306,7 +332,7 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeImg('image1'); stopVideo('image1')">&times;</a>
           <div class="overlay-content-img">
 
-            <iframe width="840" height="473" src="https://www.youtube.com/embed/nMKFCQlynO8"
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/fFaF9XUJ9xs"
             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -360,6 +386,28 @@
 
           </div>
         </div>
+
+        <!-- Image 7 RE themed intro-->
+        <div id="image7" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeImg('image7'); stopVideo('image7')">&times;</a>
+          <div class="overlay-content-img">
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/sEvErkWKkAU?rel=0"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+          </div>
+        </div>
+
+        <!-- Image 8 Simple Intro video -->
+        <div id="image8" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeImg('image8'); stopVideo('image8')">&times;</a>
+          <div class="overlay-content-img">
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/3ZG2du3yeXI?rel=0"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+          </div>
+        </div>
         <!-- Portfolio End -->
 
 
@@ -375,7 +423,7 @@
                   Interested in working with me? Know exactly what you want?
                   Not sure what you want? Either way you can contact me anytime.
                   <br> <br>
-                  I will work with you to create graphics that fit into your unique theme.
+                  I will work with you to create graphics or a website that fits into your unique theme.
                   You can ask questions, offer suggestions, or just leave a comment, you can email me at:
 
                 </p>

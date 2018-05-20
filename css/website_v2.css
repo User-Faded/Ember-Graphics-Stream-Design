@@ -20,9 +20,6 @@ body {
   padding-top: 22px;
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 
 /*Nav Bar CSS */
@@ -55,9 +52,11 @@ transition: top 0.7s, opacity 0.7s;
   color: #ffd24e;
 }
 
-.nav-animation {
+.nav-animation:hover {
     animation: fire 1.2s ease-in-out 0s infinite alternate;
 }
+
+
 
 .jumbotron-text {
   color: #ffd24e;
@@ -99,7 +98,8 @@ width: 100%;
 /* Change link hover color */
 a:hover{
   color: #ffd24e;
-  animation: fire 1.2s ease-in-out 0s infinite alternate;
+  text-decoration: none;
+
 }
 
 /* Jumbotron */
@@ -258,7 +258,7 @@ h4 > a {
 }
 
 h4 > a:hover{
-  color: #ffeed8;
+  color: #ffd24e;
   text-decoration: none;
 }
 
@@ -277,6 +277,7 @@ h4 > a:hover{
 .list-icons .list-inline-item i:hover {
     color: #fd7725;
 }
+
 
 .header-color {
   color: #ab9147;
